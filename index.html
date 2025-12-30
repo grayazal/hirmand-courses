@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>آموزشگاه فنی و حرفه‌ای هیرمند</title>
+
+  <!-- فونت فارسی -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-main: #0b1220;
+      --bg-card: #121a2f;
+      --primary: #3b82f6;
+      --accent: #22c55e;
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --border-soft: rgba(255,255,255,0.06);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Vazirmatn", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #0b1220, #020617);
+      color: var(--text-main);
+      line-height: 1.6;
+      direction: rtl;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: auto;
+      padding: 32px 16px 80px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    /* فضای لوگو */
+    .logo-placeholder {
+      width: 120px;
+      height: 120px;
+      margin: auto;
+      margin-bottom: 16px;
+      background: var(--bg-card);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: var(--primary);
+      font-size: 24px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      color: var(--text-muted);
+      margin-top: 10px;
+      font-size: 15px;
+    }
+
+    /* Section */
+    .section {
+      margin-bottom: 48px;
+    }
+
+    .section h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      border-right: 4px solid var(--primary);
+      padding-right: 12px;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-soft);
+      border-radius: 14px;
+      padding: 18px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .card span {
+      font-size: 12px;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Certificate */
+    .certificate {
+      background: linear-gradient(135deg, #1e293b, #020617);
+      border: 1px solid var(--border-soft);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+    }
+
+    .certificate h2 {
+      border: none;
+      padding: 0;
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .certificate p {
+      color: var(--accent);
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 24px;
+      }
+    }
+    .logo-container {
+  width: 120px; /* اندازه پایه */
+  height: 120px; 
+  margin: 16px auto; /* فاصله بالا و پایین + وسط چین */
+  display: flex;
+  justify-content: center; /* وسط‌چین افقی */
+  align-items: center;     /* وسط‌چین عمودی */
+}
+
+.logo-container img {
+  max-width: 100%;   /* عرض حداکثر 100% ظرف */
+  max-height: 100%;  /* ارتفاع حداکثر 100% ظرف */
+  object-fit: contain; /* بدون کش آمدن تصویر */
+  display: block;
+  border-radius: 50%;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="logoo.png" alt="لوگو آموزشگاه هیرمند">
+          </div>
+          
+      <h1>آموزشگاه فنی و حرفه‌ای هیرمند</h1>
+      <p>مهارت‌های عملی برای ورود حرفه‌ای به بازار کار</p>
+    </header>
+
+    <!-- کودکان و نوجوانان -->
+    <section class="section">
+      <h2>رباتیک کودکان و نوجوانان</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>رباتیک IDEAS</h3>
+          <span>۵ تا ۷ سال</span>
+          <p>آشنایی خلاقانه با مفاهیم رباتیک، منطق و کار گروهی.</p>
+        </div>
+        <div class="card">
+          <h3>رباتیک KAI</h3>
+          <span>۷ تا ۱۰ سال</span>
+          <p>ساخت و کنترل ربات‌های آموزشی و تقویت مهارت حل مسئله.</p>
+        </div>
+        <div class="card">
+          <h3>برنامه‌نویسی PBOT</h3>
+          <span>۹ تا ۱۳ سال</span>
+          <p>یادگیری برنامه‌نویسی با روش پروژه‌محور برای کودکان.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- رباتیک و اینترنت اشیا -->
+    <section class="section">
+      <h2>رباتیک و اینترنت اشیا</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>اینترنت اشیا با Arduino و Raspberry Pi</h3>
+          <span>۱۲ تا ۱۸ سال</span>
+          <p>طراحی سیستم‌های هوشمند با سنسورها و کنترلرها.</p>
+        </div>
+        <div class="card">
+          <h3>اینترنت اشیا تخصصی</h3>
+          <span>+16 سال</span>
+          <p>پیاده‌سازی پروژه‌های هوشمند صنعتی و پیشرفته.</p>
+        </div>
+        <div class="card">
+          <h3>لحیم کاری و الکترونیک</h3>
+          <span>+14 سال</span>
+          <p>مهارت‌های عملی الکترونیک و مونتاژ مدارها.</p>
+        </div>
+        <div class="card">
+          <h3>طراحی برد الکترونیکی</h3>
+          <span>+16 سال</span>
+          <p>طراحی و اجرای بردهای کاربردی.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- برنامه نویسی -->
+    <section class="section">
+      <h2>برنامه‌نویسی و توسعه وب</h2>
+      <div class="grid">
+        <div class="card"><h3>Python</h3><span>+14 سال</span><p>برنامه‌نویسی از پایه تا پروژه‌های عملی.</p></div>
+        <div class="card"><h3>زبان‌های برنامه‌نویسی</h3><span>+14 سال</span><p>Python | Java | C++ | C# | MATLAB</p></div>
+        <div class="card"><h3>HTML و CSS</h3><span>+14 سال</span><p>طراحی صفحات وب ریسپانسیو و استاندارد.</p></div>
+        <div class="card"><h3>طراحی وب WordPress</h3><span>+14 سال</span><p>ساخت سایت حرفه‌ای بدون کدنویسی.</p></div>
+        <div class="card"><h3>طراحی وب Django</h3><span>+16 سال</span><p>توسعه وب حرفه‌ای با Python و Django.</p></div>
+      </div>
+    </section>
+
+    <!-- هوش مصنوعی -->
+    <section class="section">
+      <h2>هوش مصنوعی و داده</h2>
+      <div class="grid">
+        <div class="card"><h3>یادگیری ماشین</h3><span>+18 سال</span><p>آموزش مدل‌های داده‌محور و الگوریتم‌های هوشمند.</p></div>
+        <div class="card"><h3>بینایی ماشین</h3><span>+18 سال</span><p>پردازش تصویر و تحلیل داده‌های بصری.</p></div>
+        <div class="card"><h3>ابزارهای هوش مصنوعی</h3><span>+14 سال</span><p>کاربرد عملی AI در تولید محتوا و کسب‌وکار.</p></div>
+      </div>
+    </section>
+
+    <!-- حسابداری -->
+    <section class="section">
+      <h2>حسابداری و مهارت‌های اداری</h2>
+      <div class="grid">
+        <div class="card"><h3>ICDL</h3><span>+14 سال</span><p>مهارت‌های ضروری کامپیوتر و اداری.</p></div>
+        <div class="card"><h3>حسابداری عمومی</h3><span>+16 سال</span><p>اصول حسابداری برای بازار کار.</p></div>
+        <div class="card"><h3>حسابداری با نرم‌افزار مالی</h3><span>+16 سال</span><p>آموزش عملی نرم‌افزارهای حسابداری.</p></div>
+      </div>
+    </section>
+
+    <!-- طراحی و مهندسی -->
+    <section class="section">
+      <h2>طراحی، گرافیک و نرم‌افزار مهندسی</h2>
+      <div class="grid">
+        <div class="card"><h3>فتوشاپ</h3><span>+14 سال</span><p>ویرایش تصویر و طراحی گرافیکی حرفه‌ای.</p></div>
+        <div class="card"><h3>پریمیر</h3><span>+14 سال</span><p>تدوین و تولید محتوای ویدیویی.</p></div>
+        <div class="card"><h3>اتوکد</h3><span>+16 سال</span><p>نقشه‌کشی و طراحی فنی.</p></div>
+        <div class="card"><h3>3Ds Max</h3><span>+16 سال</span><p>مدلسازی و طراحی سه‌بعدی.</p></div>
+        <div class="card"><h3>MATLAB</h3><span>+18 سال</span><p>محاسبات مهندسی و تحلیل داده.</p></div>
+      </div>
+    </section>
+
+    <!-- شبکه و امنیت -->
+    <section class="section">
+      <h2>شبکه و امنیت سایبری</h2>
+      <div class="grid">
+        <div class="card"><h3>Penetration Test</h3><span>+18 سال</span><p>آموزش روش‌های تست نفوذ سیستم‌ها و شبکه‌ها.</p></div>
+        <div class="card"><h3>CCNA</h3><span>+18 سال</span><p>آموزش شبکه‌های سیسکو و مفاهیم Routing & Switching.</p></div>
+        <div class="card"><h3>MTCNA</h3><span>+18 سال</span><p>دوره مقدماتی شبکه میکروتیک و پیکربندی روترها.</p></div>
+        <div class="card"><h3>Net+</h3><span>+16 سال</span><p>مهارت‌های پایه شبکه و مدیریت شبکه‌های کوچک تا متوسط.</p></div>
+      </div>
+    </section>
+
+    <!-- تولید محتوا -->
+    <section class="section">
+      <h2>تولید محتوا دیجیتال</h2>
+      <div class="grid">
+        <div class="card"><h3>تولید محتوا</h3><span>+14 سال</span><p>ساخت محتوای حرفه‌ای برای شبکه‌های اجتماعی و کسب‌وکار.</p></div>
+      </div>
+    </section>
+
+    <!-- مدرک -->
+    <section class="certificate">
+      <h2>مدرک رسمی</h2>
+      <p>✔ اعطای مدرک رسمی فنی و حرفه‌ای</p>
+    </section>
+
+    <footer>
+      © آموزشگاه هیرمند – تمامی حقوق محفوظ است
+    </footer>
+
+  </div>
+</body>
+</html>
